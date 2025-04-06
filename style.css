@@ -1,0 +1,79 @@
+:root {
+    --gray: #949494;
+    --gray-1: #333;
+    --borda-pre: #ccc;
+    --pre: #f0f0f0;
+    --dark: #0c0c0c;
+    --dark-2: #1c1c1c;
+    --dark-3: #4f4f4f;
+    --white: #fff;
+    --white-2: #c0c0c0;
+    --purple: #5959ff;
+    --SlateGray: #778899;
+    --RoyalBlue: #4169E1;
+}
+body {
+    background-color: var(--white-2);
+    margin: 0;
+    margin: 0px;
+    font-family: sans-serif;
+    display: flex; /* Usando flexbox para layout */
+}
+.menu {
+    background-color: var(--gray-1);
+    width: 30pxh; /* Largura do menu lateral */
+    height: 100%; /* Altura total da tela */
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+.menu a {
+    color: var(--white);
+    padding: 10px;
+    text-decoration: none;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.menu a:hover {
+    background-color: #555;
+}
+.conteudo {
+    width: 70%;
+    padding: 0px;
+    margin: auto;
+    /*flex-grow: 1;  Ocupa o espaço restante */
+}
+.conteudo h3 {
+    text-align: center;
+}
+.conteudo p {
+    padding: 0px;
+    margin: 0px;
+}
+/* .lang-name p {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+} */
+pre {
+    background-color: var(--dark-2);
+    padding: 5px 30px;
+    color: var(--white-2);
+    border-radius: 5px;
+    margin: auto 0px 15px;
+}
+code {
+    font-size: 18px;
+}
+
+/* pre {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: monospace;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+} */
