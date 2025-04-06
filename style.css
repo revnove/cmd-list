@@ -16,7 +16,7 @@ body {
     background-color: var(--white-2);
     margin: 0;
     margin: 0px;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex; /* Usando flexbox para layout */
 }
 .menu {
@@ -49,6 +49,9 @@ body {
 .conteudo p {
     padding: 0px;
     margin: 0px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: bold;
+    font-size: 16px;
 }
 /* .lang-name p {
     font-size: 1.5em;

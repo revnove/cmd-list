@@ -1,16 +1,24 @@
-var menu = document.getElementById('menu')
-var tituloComandos = document.getElementById('titulo-comandos')
-var descriCMD_1 = document.getElementById('descri-cmd-1')
-var gitCMD_1 = document.getElementById('git-cmd-1')
-var conteudo = document.getElementById('conteudo')
+const comandosGit = ["git init", "git add"," git status", "git clone", "git commit"]
+const descricaoGit = ["Inicializa um novo repositório Git vazio no diretório atual", "Adiciona as alterações dos arquivos especificados", "Exibe o estado do seu diretório de trabalho e da área de staging", "Cria uma cópia local de um repositório remoto", "Salva as alterações da área de staging no histórico do repositório local"]
+
+const comandosDocker = ["docker run", "docker start"]
+const descricaoDocker = ["Cria um container", "Inicia o container"]
 
 function gitCMD() {
-    var gitCMD_1 = `<h3 class="tituloComandos">Lista de comandos git</h3><p>Inicia o git</p>
-        <pre><code>git init</code></pre>`
-    conteudo.innerHTML = gitCMD_1
+    tituloComandos.innerHTML = "Lista de comandos git"
+    exemploCMD.style.display = 'none'
+    exenploDescricao.style.display = 'none'
+    for (let i = 0; i < comandosGit.length; i++) {
+        var showGit = `<p>${descricaoGit[i]}</p>
+        <pre><code>${comandosGit[i]}</code></pre>`
+        conteudo.innerHTML += showGit
+    }
 }
 function dockerCMD() {
-    var docker_1 = `<h3 class="tituloComandos">Lista de comandos docker</h3><p>Cria um container docker</p>
-        <pre><code id="git-cmd-2">docker run</code></pre>`
-    conteudo.innerHTML = docker_1
+    tituloComandos.innerHTML = "Lista de comandos docker"
+    exemploCMD.style.display = 'none'
+    exenploDescricao.style.display = 'none'
+    var showDocker = `<p>${descricaoDocker}</p>
+        <pre><code id="git-cmd-2">${comandosDocker}</code></pre>`
+    conteudo.innerHTML += showDocker
 }

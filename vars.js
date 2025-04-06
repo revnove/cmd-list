@@ -1,0 +1,5 @@
+var menu = document.getElementById('menu')
+var tituloComandos = document.getElementById('titulo-comandos')
+var exenploDescricao = document.getElementById('descri-cmd-1')
+var exemploCMD = document.getElementById('git-cmd-1')
+var conteudo = document.getElementById('conteudo')
