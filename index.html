@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Show</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            display: flex; /* Usando flexbox para layout */
+        }
+
+        .menu {
+            background-color: #333;
+            width: 30pxh; /* Largura do menu lateral */
+            height: 100vh; /* Altura total da tela */
+            display: flex;
+            flex-direction: column; /* Organiza os itens em coluna */
+        }
+
+        .menu a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .conteudo {
+            flex-grow: 1; /* Ocupa o espaço restante */
+            padding: 20px;
+        }
+
+        .lang-name p {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            overflow-x: auto;
+            font-family: monospace;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%; /* Ajuste a largura conforme necessário */
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <a id="btn-python" onclick="exibirPy()">Python</a>
+        <a id="btn-javascript" onclick="exibirJavac()">Javascript</a>
+        <a id="btn-php">PHP</a>
+        <a>Pass</a>
+    </div>
+
+    <div class="conteudo">
+        <div class="lang-name">
+            <p>python</p>
+        </div>
+        <pre>
+            <code id="mostrar-codigo">
+
+            </code>
+        </pre>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
